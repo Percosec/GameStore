@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Carrito">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Carro de Compras"
+        style="@style/Texto"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="75dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCarrito"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginHorizontal="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="570dp"
+        android:background="@color/grey">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="8dp"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/btnAtras"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                style="@style/TextoBotonAtras"
+                android:text="Atrás"
+                android:layout_marginEnd="15dp"/>
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/Total"
+                android:gravity="center"
+                android:text="Total"
+                android:background="@color/orange"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+
+            <Button
+                android:id="@+id/btnComprar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextoBotonComprar"
+                android:text="Comprar"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

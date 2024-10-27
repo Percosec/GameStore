@@ -1,0 +1,84 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GameStore" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorSecondary">@color/green</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+    </style>
+
+    <color name="circle_coloractive">@color/white</color>
+    <color name="circle_colornoactive">#bebebe</color>
+
+    <style name="background">
+        <item name="android:background">#111111</item>
+    </style>
+
+    <style name="backgroundTint">
+        <item name="android:backgroundTint">@color/black</item>
+    </style>
+
+
+    <style name="image">
+        <item name="android:src">@drawable/gamestorelogo</item>
+    </style>
+
+    <style name="TextoCategoria">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ProgressBar">
+        <item name="android:indeterminateTint">@color/green</item>
+    </style>
+
+    <style name="TextoToolBar">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextoUsuario">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:hint">@string/textoUsuario</item>
+    </style>
+
+    <style name="TextoContrasenia">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:hint">@string/textoContrasenia</item>
+    </style>
+
+    <style name="TextoConfirmarContrasenia">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:hint">@string/textoConfirmarContrasenia</item>
+    </style>
+
+    <style name="TextoBoton">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Texto">
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="TextoBotonAtras">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/grey</item>
+    </style>
+
+
+    <style name="TextoBotonComprar">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/green</item>
+    </style>
+
+    <style name="Total">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/orange</item>
+    </style>
+
+    <style name="Theme.GameStore" parent="Base.Theme.GameStore" />
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+</resources>

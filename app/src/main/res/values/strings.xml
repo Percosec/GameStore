@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GameStore</string>
+    <string name="nav_open">Abrir Navegador</string>
+    <string name="nav_close">Cerrar Navegador</string>
+    <string name="textoUsuario">Usuario</string>
+    <string name="textoContrasenia">Contraseña</string>
+    <string name="textoConfirmarContrasenia">Confirmar Contraseña</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

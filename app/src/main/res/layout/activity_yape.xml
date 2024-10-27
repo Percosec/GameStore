@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YapeActivity"
+    android:background="#5F0B72">
+
+
+    <ir.beigirad.zigzagview.ZigzagView
+        android:id="@+id/zigzagView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666"
+        app:zigzagBackgroundColor="@color/white"
+        app:zigzagElevation="8dp"
+        app:zigzagHeight="5dp"
+        app:zigzagShadowAlpha="0"
+        app:zigzagSides="top|bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <!-- Título -->
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:text="¡Yapeaste!"
+                    android:textColor="#6D2485"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <!-- Monto -->
+                <TextView
+                    android:id="@+id/tvAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:text="S/20"
+                    android:textColor="#6D2485"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <!-- Nombre o referencia -->
+                <TextView
+                    android:id="@+id/tvReference"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="asd"
+                    android:textColor="#6D2485"
+                    android:textSize="18sp" />
+
+                <!-- Fecha y hora -->
+                <TextView
+                    android:id="@+id/tvDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="30dp"
+                    android:text="14 Mar,2024 - 20:55 pm"
+                    android:textColor="#6D2485"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <!-- Información oculta del celular -->
+                <TextView
+                    android:id="@+id/tvPhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="N de celular: *** *** 959"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <!-- Destino -->
+                <TextView
+                    android:id="@+id/tvDestination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="Destino: Yape"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <!-- Número de operación -->
+                <TextView
+                    android:id="@+id/tvOperationNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N de operación: 168476635"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ir.beigirad.zigzagview.ZigzagView>
+
+    <ImageView
+        android:id="@+id/ivYape"
+        android:layout_marginTop="60dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/yapelogo"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
